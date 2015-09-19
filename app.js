@@ -11,6 +11,14 @@ app.get('/', function (request, response) {
     response.send('<h1>Hello World,</h1>I am in express.');
 });
 
+// Set different routing for single page application
+app.get('/who', function (request, response) {
+   response.send('himanshupathak3');
+});
+app.get('/about', function (request, response) {
+   response.send('Web Developer');
+});
+
 var server = app.listen(3000, function () {
     console.log('Application is listening to port 3000');
 });
