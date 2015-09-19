@@ -4,6 +4,7 @@
   "description": "Sample Node JS Application for beginners",
   "main": "app.js",
   "dependencies": {
+    "express": "^4.13.3",
     "gulp": "^3.9.0"
   },
   "devDependencies": {},
