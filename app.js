@@ -7,10 +7,10 @@ var express = require('express');
 var app = express();
 
 // Respond to the application root directory call
-app.get('/', function(request, response) {
-   response.send('Hello World, I am in express.');
+app.get('/', function (request, response) {
+    response.send('<h1>Hello World,</h1>I am in express.');
 });
 
-var server = app.listen(3000, function() {
-   console.log('Application is listening to port 3000');
+var server = app.listen(3000, function () {
+    console.log('Application is listening to port 3000');
 });
