@@ -19,6 +19,11 @@ app.get('/about', function (request, response) {
    response.send('Web Developer');
 });
 
+// Receive URL parameters from URL
+app.get('/my/:name?', function (request, response) {
+    response.send('Hello <strong>' + request.params.name + '</strong> you are found on this page.');
+});
+
 var server = app.listen(3000, function () {
     console.log('Application is listening to port 3000');
 });
