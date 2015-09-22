@@ -5,10 +5,11 @@
 var express = require('express');
 // Define our express application
 var app = express();
+app.set('view engine', 'ejs');
 
-// Respond to the application root directory call
+// Respond to the application root directory call with template engine
 app.get('/', function (request, response) {
-    response.send('<h1>Hello World,</h1>I am in express.');
+    response.render('default');
 });
 
 // Set different routing for single page application
