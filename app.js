@@ -14,10 +14,10 @@ app.get('/', function (request, response) {
 
 // Set different routing for single page application
 app.get('/who', function (request, response) {
-   response.send('himanshupathak3');
+    response.send('himanshupathak3');
 });
 app.get('/about', function (request, response) {
-   response.send('Web Developer');
+    response.send('Web Developer');
 });
 
 // Receive URL parameters from URL
